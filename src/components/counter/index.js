@@ -10,7 +10,7 @@ class CounterContainer extends PureComponent {
         }
 
         this.decrement = () => {
-            this.props.store.dispatch({ type: 'INCREMENT' })
+            this.props.store.dispatch({ type: 'DECREMENT' })
         }
 
     }
