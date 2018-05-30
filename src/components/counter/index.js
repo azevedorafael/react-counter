@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 
-export const Counter = ({ counter, decrement, increment }) => (
+const Counter = ({ counter, decrement, increment }) => (
     <div>
         <h1>{counter}</h1>
         <button onClick={decrement}>-</button>
@@ -10,13 +9,4 @@ export const Counter = ({ counter, decrement, increment }) => (
     </div>
 )
 
-const mapStateToProps = (state) => ({
-    counter: state
-})
-
-const mapDispatchToProps = (dispatch) => ({
-    increment: () => dispatch({ type: 'INCREMENT' }),
-    decrement: () => dispatch({ type: 'DECREMENT' })
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(Counter)
+export default(Counter)
