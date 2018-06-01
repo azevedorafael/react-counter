@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import { relative } from 'upath';
 
 const Counter = ({ counter, decrement, increment, removeCounter }) => (
     <div style={{ position: 'relative', border: '1px solid #000', padding: 5 }}>
@@ -13,4 +12,4 @@ const Counter = ({ counter, decrement, increment, removeCounter }) => (
     </div>
 )
 
-export default (Counter)
+export default Counter
